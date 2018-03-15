@@ -5,15 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
     <title>Socket Chat App</title>
 </head>
 
 <body>
-    <p>Welcome to chat app</p>
+    <div class="container">
+       <h1>Welcome to chat app</h1> 
+
+       <ul class="list-group " id="messages">
+            
+        </ul>
+    <div class="pull-down">
+        <form id="message-form" class="form-group">
+        <div class="row">
+            <input class="form-control" id="text" placeholder="Enter Message"/>
+        </div>
+        <br>
+
+        <div class="row "> <button class="btn btn-primary mt-2">Submit</button>
+        </div>
+        </form>
+        <div class="row">    <button class="btn btn-warning" id="send-location">Share Location</button>
+        </div>
+        /div>  
+</div>
 </body>
 
 <script src="/socket.io/socket.io.js"></script>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
+
 
 </html>
